@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary-1 font-poppins text-white;
+  }
+}
+html {
+  min-height: 100vh;
+}
+
+body {
+  background-image: url('../images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+}
