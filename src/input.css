@@ -11,9 +11,29 @@ html {
   min-height: 100vh;
 }
 
-body {
-  background-image: url('../images/bg-mobile.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right top;
+@media (max-width: 540px) {
+  body {
+    background-image: url('../images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 799px) {
+  body {
+    background-image: url('../images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position:; */
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: none;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-position:; */
+  }
 }
